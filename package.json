@@ -1,0 +1,15 @@
+{
+  "name": "front_end_interview_app",
+  "version": "1.0.0",
+  "description": "Omni Labs interview front end",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Kristyn Bryan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
