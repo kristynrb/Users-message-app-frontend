@@ -4,17 +4,14 @@
     <meta charset="utf-8">
     <title>Omni Labs Interview - Front End</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js" charset="utf-8"></script>
     <script src="/js/app.js" charset="utf-8"></script>
+    <base href="/" target="_blank">
   </head>
-  <body ng-controller="MyController as ctrl">
+  <body>
       {{ctrl.foo}}
 
-      <form ng-submit="ctrl.createUser">
-          {{ctrl.username}} - {{ctrl.password}}
-          Username: <input type="text" ng-model="ctrl.username" placeholder="username"/>
-          Password: <input type="password" ng-model="ctrl.password"/>
-          <input type="submit" value="Submit"/>
-      </form>
-
+      <a href="/user/new">Register</a>
+      <main ng-view></main>
   </body>
 </html>
