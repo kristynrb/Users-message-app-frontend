@@ -17,8 +17,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       controller = this;
       this.publicMessages = "no public messages yet";
 
-      this.getPublicMessages = function($http){
-        ccontroller.publicMessages = "getPublicMessages was clicked";
+      this.getPublicMessages = function(){
+        controller.publicMessages = "getPublicMessages was clicked";
        $http({
            method:'GET',
            url:'localhost:3000/messages'
@@ -30,6 +30,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
            }
        );
       }
+      this.getPublicMessages();
     },
     controllerAs: 'publicMessageCtrl'
   });
