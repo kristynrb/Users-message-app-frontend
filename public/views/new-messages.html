@@ -1,7 +1,7 @@
 <h2>Write a New Message</h2>
 <section>
 <form ng-submit="ctrl.newMessage">
-    Message: <input type="text" ng-model="ctrl.message.body" placeholder="Write your message here"/>
+    Message: <input type="text" ng-model="messageCtrl.message" placeholder="Write your message here"/>
     <br>
     Public or private?:
     <br>
@@ -18,5 +18,10 @@
   </radio-group>
 </form>
 
+<hr>
+
+<h3>Your message</h3>
+{{messageCtrl.message}}
+<br>
 <h3>The type of message that you are writing is: {{messageCtrl.type}}</h3>
 </section>

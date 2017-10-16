@@ -18,6 +18,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     templateUrl: 'views/new-messages.html',
     controller: function(){
       this.type = "This needs to be changed";
+      this.message = ""
     },
       controllerAs: 'messageCtrl'
   });
