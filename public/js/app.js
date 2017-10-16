@@ -14,8 +14,15 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
   $routeProvider.when('/messages/private', {
     templateUrl: 'views/private-messages.html'
   });
-
+  $routeProvider.when('/messages/new', {
+    templateUrl: 'views/new-messages.html',
+    controller: function(){
+      this.type = "This needs to be changed";
+    },
+      controllerAs: 'messageCtrl'
+  });
 }]);
+
 // app.controller('MyController', ['$http', function($http){
 //     this.foo = "bar";
 //     const controller = this;
