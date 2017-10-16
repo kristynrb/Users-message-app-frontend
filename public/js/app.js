@@ -11,6 +11,9 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
   $routeProvider.when('/messages/public', {
     templateUrl: 'views/public-messages.html'
   });
+  $routeProvider.when('/messages/private', {
+    templateUrl: 'views/private-messages.html'
+  });
 
 }]);
 // app.controller('MyController', ['$http', function($http){
