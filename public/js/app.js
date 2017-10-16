@@ -4,8 +4,12 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
   $locationProvider.html5Mode({enabled:true});
   $routeProvider.when('/user/new', {
     templateUrl: 'views/registration.html'
+  });
+  $routeProvider.when('/user/signIn', {
+    templateUrl: 'views/sign-in.html'
   })
-}])
+
+}]);
 // app.controller('MyController', ['$http', function($http){
 //     this.foo = "bar";
 //     const controller = this;
