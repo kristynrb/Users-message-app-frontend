@@ -7,7 +7,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
   });
   $routeProvider.when('/user/signIn', {
     templateUrl: 'views/sign-in.html'
-  })
+  });
+  $routeProvider.when('/messages/public', {
+    templateUrl: 'views/public-messages.html'
+  });
 
 }]);
 // app.controller('MyController', ['$http', function($http){
